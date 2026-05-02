@@ -85,9 +85,54 @@ label {
   background-color: transparent;
 }
 input:focus + label, input:not(:placeholder-shown) + label {
-  top: -10px;
+  top: -13px;
   font-size: 12px;
   background-color: transparent;
   color: #0FB7C2;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 420px;
+    padding: 35px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .input {
+    padding: 16px 10px 15px 45px;
+    font-size: 17px;
+  }
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 480px;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  .title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .field {
+    margin-bottom: 20px;
+  }
+  .input {
+    height: 55px;
+    font-size: 18px;
+  }
+  .field i {
+    top: 19px;
+    font-size: 18px;
+  }
+  .btn {
+    padding: 14px;
+    font-size: 17px;
+  }
 }
